@@ -1,0 +1,38 @@
+@import "../../style/variables";
+
+.card-details {
+  background-color: $primary-color-gray;
+  margin: 5rem auto;
+  border-radius: 5px;
+  width: 70%;
+  border: 3px solid $secondary-color-blue;
+
+  .card {
+    padding: 0.5rem 2rem;
+    &-header {
+      .subject {
+        font-size: 2rem;
+        display: inline-block;
+        margin-right: 3rem;
+      }
+      .status {
+        background-color: $secondary-color-blue;
+        color: $primary-color-gray;
+        padding: 0.2rem 0.7rem;
+        border-radius: 5px;
+        text-transform: capitalize;
+      }
+    }
+
+    &-body {
+      .severity,
+      .description {
+        text-transform: capitalize;
+        font-size: 1.2rem;
+      }
+      .user {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

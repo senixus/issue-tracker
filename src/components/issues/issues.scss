@@ -1,0 +1,54 @@
+@import "../../style/variables";
+
+table {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  background-color: $primary-color-gray;
+  border-spacing: unset;
+  thead {
+    background-color: $primary-color-blue;
+    color: $primary-color-white;
+    font-size: 1.3rem;
+
+    th {
+      padding: 0.7rem 0.5rem;
+      font-weight: 500;
+    }
+  }
+
+  tbody {
+    background-color: $primary-color-gray;
+
+    tr {
+      &:hover {
+        background-color: $secondary-color-gray;
+      }
+    }
+    td {
+      padding: 1.2rem 0.3rem;
+      border-bottom: 1px solid $primary-color-dark;
+      font-size: 1.1rem;
+    }
+  }
+
+  .close-btn {
+    outline: none;
+    border: 1px solid $primary-close-background;
+    background-color: $primary-close-background;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    color: $primary-btn-color;
+    cursor: pointer;
+  }
+
+  .delete-btn {
+    outline: none;
+    border: 1px solid $primary-delete-background;
+    background-color: $primary-delete-background;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    color: $primary-btn-color;
+    cursor: pointer;
+  }
+}
